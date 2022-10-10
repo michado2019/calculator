@@ -1,0 +1,78 @@
+main {
+  text-align: center;
+  vertical-align: center;
+}
+
+
+:root{
+  --primary: #d81e5b;
+  --secondary: #8c33ff;
+  --dark: #131a26;
+  --light: #eeeeee;
+
+
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App{
+  border: 2px solid var(--dark);
+  margin: 40px;
+  background-color: #cccccc;
+  border-radius: 5px;
+}
+.calculator{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 30px auto;
+  background-color: var(--dark);
+  width: 70%;
+  border-radius: 4px;
+  font-size: 30px;
+
+}
+.display{
+  color: var(--light);
+  font-weight: 600;
+  text-align: right;
+  padding: 15px;
+  min-width: 200px;
+  border-radius: 4px 4px 0 0;
+}
+.operators{
+  display: flex;
+  justify-content: space-evenly;
+  background-color: var(--primary);
+  flex-wrap: wrap;
+}
+.operators button{
+  font-weight: 600;
+  padding: 20px;
+  color: var(--light);
+  border: 0;
+  background-color: var(--primary);
+  font-size: 20px;
+  cursor: pointer;
+}
+.btnsDiv{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  background-color: var(--dark);
+
+}
+.btnsDiv button{
+  border-radius: 4px;
+  padding: 20px;
+  border: 0;
+  margin: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 20px
+}
+.btnsDiv button:hover{
+  transition: all 0.3s;
+  background-color: #cccccc;
+}
